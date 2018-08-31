@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import auth from '../hoc/auth';
 
 class MovieQuotes extends Component {
     render() {
+        console.log('Movie Props:', this.props);
         return (
             <div> 
                 <h1 className="center"> Believe It </h1>
@@ -10,4 +12,4 @@ class MovieQuotes extends Component {
         )
     }
 }
-export default MovieQuotes;
+export default auth(MovieQuotes);
